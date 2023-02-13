@@ -16,8 +16,8 @@ const UserCard = ({user, deleteUser, setUpdatingUser, handleClickShowModal}) => 
       text: "Are you sure you want to Delete this User?",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonText: "Sí",
-      cancelButtonText: "Cancelar"
+      confirmButtonText: "Yes",
+      cancelButtonText: "Cancel"
     }).then(resultado => {
       if(resultado.value) {
         deleteUser(user.id);
